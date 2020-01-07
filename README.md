@@ -1,5 +1,24 @@
 # site-presentation
 
+## Generation des fichiers statiques
+
+Pas encore possible.
+
+* `npm run build` pour préparer les fichiers statiques.
+Les fichiers présents dans le répertoire `src` seront traités dont de
+ nouveaux fichiers seront généré dans le répertoire `dist`.
+* `npm start` pour lancer le site en local.
+
+## Mettre à jour le site statique
+
+Pas encore possible
+
+* Depuis le répertoire racine, aller dans le répertoire `dist` contenant
+ les fichiers statiques via la commande `cd dist`.
+ * Vérifier que vous êtes bien sur la branche `master`
+* `git commit -am '<Votre message de commit>'` pour prendre en compte les
+ nouvelles modifications.
+
 ## Contributions
 
 * Faites un fork du répertoire
@@ -19,4 +38,5 @@ Comme noms de branche, nous pouvons envisager :
  éalablement ainsi que les modifications qu'elle contient.
 * Aller sur la page du répertoire sur laquelle vous avez fait un fork.
 * Créer un pull request décrivant les ajouts/modifications faites.
+
 
