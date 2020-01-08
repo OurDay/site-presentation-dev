@@ -1,4 +1,8 @@
+@import "base/_variables";
+
 @import "~bootstrap";
+
+@import "sections/index.d";
 
 html, body {
   overflow-x: hidden;

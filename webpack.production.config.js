@@ -89,6 +89,21 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(mp4)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            // name: '[name].[contenthash].[ext]',
+                            name: '[name].[ext]',
+                            outputPath: 'video/',
+                            publicPath: 'video/',
+                            postTransformPublicPath: (p) => `__webpack_public_path__ + ${p}`
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
                     {

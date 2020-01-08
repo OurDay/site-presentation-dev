@@ -1,0 +1,25 @@
+#event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+
+  .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    video {
+      min-height: 100vh;
+      min-width: 100vw;
+      position: relative;
+      top: -50%;
+      left: 0;
+    }
+
+  }
+}
