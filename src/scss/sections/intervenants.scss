@@ -1,0 +1,38 @@
+#intervenants {
+  background: $intervenants--background-color;
+
+  .intervenant {
+    padding: 1rem;
+
+    .intervenant--avatar {
+
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      margin-bottom: 1rem;
+      background: $intervenants--avatar--background-color;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .intervenant--infos {
+
+      font-size: 1.7rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .intervenant--job {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+      }
+
+    }
+  }
+
+}

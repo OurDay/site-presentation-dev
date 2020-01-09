@@ -1,9 +1,6 @@
 #event {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-height: 100vh;
+
+  color: $event--color;
 
   .background-container {
     position: absolute;
@@ -13,13 +10,33 @@
     height: 100vh;
     overflow: hidden;
 
+/*
+    background-image: url(https://media.giphy.com/media/cmegx6SssTKmEFEcwj/giphy.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    */
+
+    filter: blur(5px);
+
     video {
       min-height: 100vh;
       min-width: 100vw;
+      width: 150vw;
+      height: 150vh;
       position: relative;
       top: -50%;
-      left: 0;
+      left: -25%;
     }
 
+  }
+
+  .event-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3rem;
+    margin-top: 5rem;
   }
 }

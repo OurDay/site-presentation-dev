@@ -4,7 +4,9 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
-const dotenv = require('dotenv').config({path: __dirname + '/.env'})
+const dotenv = require('dotenv').config({path: __dirname + '/.env'});
+const CopyPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
     entry: {
@@ -79,8 +81,9 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            // name: '[name].[contenthash].[ext]',
-                            name: '[name].[ext]',
+                            name: '[name].[contenthash].[ext]',
+//                            name: '[id].[ext]',
+                            esModule: false,
                             outputPath: 'img/',
                             publicPath: 'img/',
                             postTransformPublicPath: (p) => `__webpack_public_path__ + ${p}`
@@ -152,12 +155,12 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ '.tsx', '.ts', '.js' ],
+        extensions: ['.tsx', '.ts', '.js'],
     },
     optimization: {
         namedModules: false,
         namedChunks: false,
-        nodeEnv: 'development',
+        nodeEnv: 'production',
         flagIncludedChunks: true,
         occurrenceOrder: true,
         sideEffects: true,
@@ -188,7 +191,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         // new webpack.NoEmitOnErrorsPlugin(),
         new webpack.ProvidePlugin({
-            "process.env": dotenv.parsed,
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery",
+            "process.env": dotenv.parsed
         }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
@@ -219,7 +225,12 @@ module.exports = {
                     beautify: false,
                 }
             }
-        })
+        }),
+        new CopyPlugin([
+            {from: 'src/fonts', to: 'fonts'},
+            {from: 'src/img', to: 'img'},
+            {from: 'src/video', to: 'video'},
+        ])
     ]
 }
 

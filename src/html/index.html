@@ -6,16 +6,46 @@
 </head>
 <body>
 
-<section id="event">
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <span>Our Day</span>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#event">Présentation</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#intervenants">Intervenants</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#inscription">Inscription</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sponsors">Sponsor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<section id="event" class="fullscreen">
 
     <div class="background-container">
-        <video muted="muted" loop="loop" autoplay="autoplay" class="photo__image photo--cinemagraph lazyloaded" alt="pouring beer cinemagraph" src="https://burst.shopifycdn.com/photos/Nicole-Beer-Cinemagraph3.mp4"></video>
+        <video muted="muted" loop="loop" autoplay="autoplay"
+                class="photo__image photo--cinemagraph lazyloaded"
+                alt="pouring beer cinemagraph" src="../video/impressionV1.webm"></video>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="element-background"></div>
-            <div class="offset-md-3 col-md-9">
+            <div class="offset-md-5 col-md-7">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aliquid
@@ -35,14 +65,121 @@
     <div class="container">
         <div class="row">
             <h1>Intervenants</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                architecto asperiores cupiditate error nostrum odio!</p>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="carousel carousel-intervenants">
+                    <div class="intervenant">
+                        <div class="intervenant--avatar">
+                            <img src="../img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="intervenant--infos">
+                            <span class="intervenant--nom">Jean DUPONT</span>
+                            <span class="intervenant--job">Un job</span>
+                        </div>
+                    </div>
+                    <div class="intervenant">
+                        <div class="intervenant--avatar">
+                            <img src="../img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="intervenant--infos">
+                            <span class="intervenant--nom">Jean DUPONT</span>
+                            <span class="intervenant--job">Un job</span>
+                        </div>
+                    </div>
+                    <div class="intervenant">
+                        <div class="intervenant--avatar">
+                            <img src="../img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="intervenant--infos">
+                            <span class="intervenant--nom">Jean DUPONT</span>
+                            <span class="intervenant--job">Un job</span>
+                        </div>
+                    </div>
+                    <div class="intervenant">
+                        <div class="intervenant--avatar">
+                            <img src="../img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="intervenant--infos">
+                            <span class="intervenant--nom">Jean DUPONT</span>
+                            <span class="intervenant--job">Un job</span>
+                        </div>
+                    </div>
+                    <div class="intervenant">
+                        <div class="intervenant--avatar">
+                            <img src="../img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="intervenant--infos">
+                            <span class="intervenant--nom">Jean DUPONT</span>
+                            <span class="intervenant--job">Un job</span>
+                        </div>
+                    </div>
+                    <div class="intervenant">
+                        <div class="intervenant--avatar">
+                            <img src="../img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="intervenant--infos">
+                            <span class="intervenant--nom">Jean DUPONT</span>
+                            <span class="intervenant--job">Un job</span>
+                        </div>
+                    </div>
+                    <div class="intervenant">
+                        <div class="intervenant--avatar">
+                            <img src="../img/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="intervenant--infos">
+                            <span class="intervenant--nom">Jean DUPONT</span>
+                            <span class="intervenant--job">Un job</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="inscription">
-    <div class="container">
+<section id="inscription" class="fullscreen">
+    <div class="container-fluid">
         <div class="row">
-            <h1>Inscription</h1>
+            <div class="col-lg-4 col-md-6 col-12">
+                <h1>Inscription</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    iste numquam, odio omnis perspiciatis temporibus!</p>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <label>Prénom</label>
+                    <input class="form-control" id="name" type="text" placeholder="Prénom" required="required" data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <label>Nom</label>
+                    <input class="form-control" id="email" type="email" placeholder="Nom" required="required" data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <label>Mail</label>
+                    <input class="form-control" id="phone" type="tel" placeholder="Mail" required="required" data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Inscription</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12">
+                <iframe src="https://maps.google.com/maps?q=25%20rue%20claude%20tillier&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0"></iframe>
+            </div>
         </div>
     </div>
 </section>
@@ -50,26 +187,140 @@
 <section id="sponsors">
     <div class="container">
         <div class="row">
-            <h1>Sponsors</h1>
+            <div class="col">
+              <h1>Nos partenaires</h1>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>Partenaires platine</h2>
+            <div class="carousel-partenaires-platine carousel">
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>Partenaires or</h2>
+            <div class="carousel-partenaires-or carousel">
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>Partenaires spéciaux</h2>
+            <div class="carousel-partenaires-speciaux carousel">
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>Partenaires argent</h2>
+            <div class="carousel-partenaires-argent carousel">
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+              <div class="partenaire">
+                <img src="../img/partenaires/exemple.jpg" alt="Exemple" lazy="loading">
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 </section>
 
 <section id="expended-footer">
     <div class="container">
-        <div class="col-md-4">
-            <span class="text-bold text-uppercase">Location</span>
-        </div>
-        <div class="col-md-4">
-            <span class="text-bold text-uppercase">Around the web</span>
-        </div>
-        <div class="col-md-4">
-            <span class="text-bold text-uppercase">About OurDays</span>
+        <div class="row">
+          <div class="col-md-4 col-12">
+              <h4 class="expended-footer--title">Location</h4>
+              <p>
+                25 rue Claude Tillier<br>
+                75012 Paris, France
+              </p>
+          </div>
+          <div class="col-md-4 col-12">
+              <h4 class="expended-footer--title">Around the web</h4>
+              <div class="list-social-button">
+                <a class="btn btn-outline-light btn-social" href="#">
+                  <i class="fab fa-fw fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-outline-light btn-social" href="#">
+                  <i class="fab fa-fw fa-twitter"></i>
+                </a>
+                <a class="btn btn-outline-light btn-social" href="#">
+                  <i class="fab fa-fw fa-linkedin-in"></i>
+                </a>
+                <a class="btn btn-outline-light btn-social" href="#">
+                  <i class="fab fa-fw fa-dribbble"></i>
+                </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+              <h4 class="expended-footer--title">About OurDays</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
         </div>
     </div>
 </section>
 
-<section id="footer">
+<footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -77,7 +328,7 @@
             </div>
         </div>
     </div>
-</section>
+</footer>
 
 </body>
 </html>

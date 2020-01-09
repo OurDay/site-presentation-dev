@@ -1,1 +1,24 @@
 @import 'event';
+@import 'footer';
+@import 'inscription';
+@import 'intervenants';
+@import 'sponsors';
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7vh 0;
+
+  &.fullscreen {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+  }
+
+  h1 ~ p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+}

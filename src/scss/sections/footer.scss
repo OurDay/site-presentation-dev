@@ -1,0 +1,43 @@
+#expended-footer {
+  background: $expended-footer--background-color;
+
+  .list-social-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    a {
+
+      &:not(:first-of-type) {
+        margin-left: .5rem;
+      }
+
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.expended-footer--title {
+  text-transform: uppercase;
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+
+#footer {
+  background: $footer--background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  color: $footer--color;
+
+  p {
+    text-align: center;
+    margin: 0;
+  }
+
+}
