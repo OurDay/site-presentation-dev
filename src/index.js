@@ -277,3 +277,19 @@ $(function() {
         });
 
 });
+
+function loadVideos () {
+  const videos =
+    document.getElementsByTagName('video');
+
+  let videosLength =
+    videos.length;
+
+  for (; 0 > videosLength-- ;) {
+    const currentVideo = videos[videosLength];
+    const currentSrc = currentVideo.getAttribute('data-video-src');
+    currentVideo.setAttribute('src', currentSrc);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadVideos);

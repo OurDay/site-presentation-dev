@@ -2,6 +2,10 @@
   background: $inscription--background-color;
   padding: 0;
 
+  .container-fluid {
+    padding: 0;
+  }
+
   .row {
     height: 100vh;
 
