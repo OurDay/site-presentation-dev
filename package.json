@@ -6,7 +6,12 @@
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage",
-    "build": "webpack --mode production --config webpack.server.config.js --progress && webpack --mode production --config webpack.production.config.js --progress",
+    "build": "npm run buildServer && npm run buildSrc",
+    "buildSrc": "webpack --mode production --config webpack.production.config.js --progress",
+    "buildServer": "webpack --mode production --config webpack.server.config.js --progress",
+    "watch": "npm run watchServer && npm run watchSrc",
+    "watchSrc": "webpack --mode production --config webpack.production.config.js --watch --progress",
+    "watchServer": "webpack --mode production --config webpack.server.config.js -watch --progress",
     "start": "nodemon ./dist/server.js"
   },
   "author": "Ulysse ARNAUD",

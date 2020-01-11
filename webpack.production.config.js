@@ -9,6 +9,12 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
+    watch: true,
+    watchOptions: {
+        aggregateTimeout: 600,
+        ignored: /node_modules/,
+        poll: 3000
+    },
     entry: {
         styles: './src/scss/main.scss',
         main: './src/index.js'
@@ -233,4 +239,3 @@ module.exports = {
         ])
     ]
 }
-
