@@ -6,18 +6,22 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    z-index: -1;
 
-/*
-    background-image: url(https://media.giphy.com/media/cmegx6SssTKmEFEcwj/giphy.gif);
-    background-position: center;
+    background-image: url(../img/background.gif);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    */
 
     filter: blur(5px);
+
+    @include media-breakpoint-down (md) {
+      height: calc(100% + 50vh);
+    }
 
     iframe {
       min-height: 100vh;

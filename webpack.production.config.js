@@ -89,6 +89,7 @@ module.exports = {
                         options: {
                             name: '[name].[contenthash].[ext]',
 //                            name: '[id].[ext]',
+                            context: 'src',
                             esModule: false,
                             outputPath: 'img/',
                             publicPath: 'img/',
@@ -105,6 +106,7 @@ module.exports = {
                         options: {
                             // name: '[name].[contenthash].[ext]',
                             name: '[name].[ext]',
+                            context: 'src',
                             outputPath: 'video/',
                             publicPath: 'video/',
                             postTransformPublicPath: (p) => `__webpack_public_path__ + ${p}`
@@ -120,6 +122,7 @@ module.exports = {
                         options: {
                             // name: '[name].[contenthash].[ext]',
                             name: '[name].[ext]',
+                            context: 'src',
                             outputPath: 'fonts/',
                             publicPath: 'fonts/',
                             postTransformPublicPath: (p) => `__webpack_public_path__ + ${p}`

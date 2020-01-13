@@ -1,6 +1,10 @@
 #sponsors {
   background: $sponsors--background-color;
 
+  @include media-breakpoint-down (md) {
+    margin-top: 300px;
+  }
+
   .row {
 
     &:not(:first-of-type) {

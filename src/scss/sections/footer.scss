@@ -1,6 +1,16 @@
 #expended-footer {
   background: $expended-footer--background-color;
 
+  @include media-breakpoint-down(md) {
+    [class^=col] {
+
+      &:not(:first-of-type) {
+        margin-top: 3rem;
+      }
+
+    }
+  }
+
   .list-social-button {
     display: flex;
     flex-direction: row;

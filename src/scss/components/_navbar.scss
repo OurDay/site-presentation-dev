@@ -22,12 +22,27 @@
       display: block;
     }
 
+    span {
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 4px;
+        content: '';
+        background: black;
+      }
+
+    }
+
     &:hover {
       color: black;
 
       &:after, &:before {
         background: black;
       }
+
     }
 
   }
